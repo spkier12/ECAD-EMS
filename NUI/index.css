@@ -1,0 +1,225 @@
+/* index.html */
+body {
+    padding: 0px;
+    margin: 0vh;
+    width: 100%;
+    height: 100%;
+}
+
+/* This holds everything togheter and makes sure the cad can be hidden and showed based on permission */
+.Frame {
+    position: fixed;
+    height: 70%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 13vh;
+
+    display: none;
+    background-color: rgb(92, 92, 92);
+    border-radius: 5ch;
+}
+
+
+.SideMenu {
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 10%;
+    background-color: rgb(56, 56, 56);
+    border-bottom-left-radius: 5ch;
+    border-top-left-radius: 5ch;
+}
+
+.MenuButton {
+    background-color: rgb(56, 56, 56);
+    color: rgb(255, 255, 255);
+    border-radius: 0ch;
+    border-style: none;
+    width: 100%;
+    height: 8%;
+    margin-top: 8%;
+    transition: background-color 0.8;
+}
+
+/* This button holds data on all widgets */
+.Widgetbutton {
+    background-color: rgb(63, 141, 118);
+    margin-top: 2%; 
+    width: 80%; 
+    margin-left: 10%; 
+    border-radius: 1ch; 
+    height: 3%;
+    border-style: none;
+    color: white;
+    transition: background-color 0.8;
+}
+
+
+
+/* SJournal.html this holds the entire right page next to menu togheter */
+.SJournal_Frame {
+    background-color: rgba(56, 56, 56, 0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/* Left widget that holds all the citizens */
+.SJournal_Profiles {
+    background-color: rgb(56, 56, 56);
+    width: 30%;
+    height: 96%;
+
+    display: block;
+    border-radius: 2ch;
+    margin-top: 1%;
+    margin-left: 1%;
+
+    min-width: 30%;
+    min-height: 95%;
+    transition: background-color 1s;
+
+}
+
+/* Left widget that holds all the citizens */
+.SJournal_Profiles2 {
+    background-color: rgb(56, 56, 56);
+    width: 30%;
+    height: 96%;
+    overflow: auto;
+
+    display: inline-block;
+    border-radius: 5ch;
+
+    margin-top: 1%;
+    margin-left: 1%;
+
+    min-width: 30%;
+    min-height: 95%;
+    transition: background-color 1s;
+
+}
+
+/* Left long widget that holds incidents */
+.SJournal_Profiles_Incidents {
+    background-color: rgb(56, 56, 56);
+    width: 30%;
+    height: 96%;
+
+    display: none;
+    border-radius: 2ch;
+    margin-top: 1%;
+    margin-left: 1%;
+
+    min-width: 30%;
+    min-height: 95%;
+    transition: background-color 1s;
+}
+.DropdownMenu {
+    width: 90%;
+    text-align: center;
+    color: black;
+    border-radius: 0.5ch;
+    border-style: none;
+    margin-top: 5%;
+}
+
+
+/* The frame that holds both top right and bottom widget */
+.SJournal_Profile_Read_Frame {
+    background-color: rgba(56, 56, 56, 0);
+    width: 67%;
+    height: 96%;
+
+    display: block;
+    border-radius: 0ch;
+    margin-top: 1%;
+    margin-left: 1%;
+
+    min-width: 67%;
+    min-height: 96%;
+}
+
+/* first top right widget */
+.SJournal_Profile_Read1 {
+    background-color: rgb(56, 56, 56);
+    width: 100%;
+    height: 25%;
+
+    display: block;
+    border-radius: 3ch;
+    margin-bottom: 1%;
+    transition: background-color 1s;
+    
+}
+
+/* second bottom right widget */
+.SJournal_Profile_Read {
+    background-color: rgb(56, 56, 56);
+    width: 100%;
+    height: 74%;
+
+    display: inline-block;
+    border-radius: 3ch;
+    margin-bottom: 1%;
+    transition: background-color 1s;
+
+}
+
+/* top/bottom right text input widget*/
+.Profile_Text_Input {
+    width: fit-content;
+    height: 15%;
+    background-color: rgb(68, 68, 68);;
+    color: white;
+    border-radius: 0.5ch;
+    border-style: none;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+/* top/bottom right text input widget*/
+.MenuButton_Profile {
+    background-color: rgb(63, 141, 118);
+    color: rgb(255, 255, 255);
+    border-radius: 0.5ch;
+    border-style: none;
+    width: 30%;
+    height: 18%;
+    margin-top: 2%;
+    margin-left: 1%;
+    display: inline-block;
+    transition: background-color 0.5s;
+}
+
+
+/* Hover */
+.MenuButton:hover {
+    background-color: rgb(92, 92, 92);
+}
+.Widgetbutton:hover {
+    background-color: rgb(182, 67, 67);
+}
+.SJournal_Profiles:hover {
+    background-color: rgb(66, 66, 66);
+}
+.SJournal_Profiles2:hover {
+    background-color: rgb(66, 66, 66);
+}
+.SJournal_Profiles2:hover {
+    background-color: rgb(66, 66, 66);
+}
+.SJournal_Profile_Read:hover {
+    background-color: rgb(66, 66, 66);
+}
+.SJournal_Profiles_Incidents:hover {
+    background-color: rgb(66, 66, 66);
+}
+.SJournal_Profile_Read1:hover {
+    background-color: rgb(66, 66, 66);
+}
+.MenuButton_Profile:hover {
+    background-color: rgb(156, 66, 66);
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="fivem.js"></script>
+    <script src="index.js"></script>
+    <title>CAD BY Ulrik Brun from Norway</title>
+</head>
+<body> 
+    <!-- Flex Holds the frame of all widgets -->
+    <div class="Frame" id="Frame"> 
+        <!-- Main Menu  -->
+        <div class="SideMenu">
+            <img src="./logo.png" style="width: 100%; height: 18%; border-top-left-radius: 5ch;">
+            <button onclick="CloseCad()" class="MenuButton">Close Cad</button>
+            <button onclick="Home()" class="MenuButton" id="Home_Button">Home</button>
+            <button onclick="SJournal()" class="MenuButton" id="SJournal_Button">Journals</button>
+            <button onclick="CloseCad()" class="MenuButton" id="Home2_Button">Create Journal</button>
+            <button onclick="UnitsReports()" class="MenuButton" id="UReport_Button">Units / Reports</button>
+        </div>
+
+
+
+
+
+
+        <!--                                      Sjournal page here                                                                      -->
+        <div class="SJournal_Frame" id="SJournal_page" style="display: none;">
+            <div class="SJournal_Profiles" id="SJournal_Profiles">
+                <button onclick="RefreshProfiles()" class="Widgetbutton">Refresh</button>
+                <p id="profiles"></p>
+            </div>
+            <div class="SJournal_Profiles_Incidents" id="SJournal_Profiles_Incidents">
+                <div style="color: white; margin-left: 10%; margin-top: 5%;">
+                    <h4>Incident Manager</h4>
+                    <input type="text" id="Incident_Name"  value="Name" class="Profile_Text_Input" style="width: 90%; margin-left: 0%; background-color: white; color: black;">
+                    
+                    <select id="IncidentManager" class="DropdownMenu">
+                        <option value="">Rullgardin meny som henning ba om</option>
+                        <option value="">Rullgardin meny som henning ba om</option>
+                    </select>
+                    <select id="IncidentManager" class="DropdownMenu">
+                        <option value="">Rullgardin meny som henning ba om</option>
+                        <option value="">Rullgardin meny som henning ba om</option>
+                    </select>
+                    <select id="IncidentManager" class="DropdownMenu">
+                        <option value="">Rullgardin meny som henning ba om</option>
+                        <option value="">Rullgardin meny som henning ba om</option>
+                    </select>
+                    <select id="IncidentManager" class="DropdownMenu">
+                        <option value="">Rullgardin meny som henning ba om</option>
+                        <option value="">Rullgardin meny som henning ba om</option>
+                    </select>
+                    <button onclick="NewIncident()" class="Widgetbutton" style="margin-left: 4%;">Upload Incident</button>
+
+                </div>
+            </div>
+
+            <div class="SJournal_Profile_Read_Frame">
+                <div class="SJournal_Profile_Read1">
+                    <input type="text" id="Profilename" disabled value="Name" class="Profile_Text_Input">
+                    <input type="text" id="" disabled value="Age" class="Profile_Text_Input">
+                    <input type="text" id="" disabled value="Blood Type" class="Profile_Text_Input">
+                    <input type="text" id="SJournal_Profile_Phone" disabled value="Phone Number" class="Profile_Text_Input">
+                    <input type="text" id="SJournal_Profile_Birth" disabled value="Birthdate" class="Profile_Text_Input">
+                    <input type="text" id="SJournal_Profile_Gender" disabled value="Gender" class="Profile_Text_Input">
+
+                    <div style="display: flex; height: 50%; width: 100%">
+                        <button onclick="CloseCad()" class="MenuButton_Profile" disabled style="width: 10%;">Save</button>
+                        <button onclick="NewIncident()" class="MenuButton_Profile">Incident manager</button>
+                    </div>
+                </div>
+                <div class="SJournal_Profile_Read">
+                </div>
+            </div>
+        </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+<!--                                        Units / Reports                                                           -->
+        <div class="SJournal_Frame" id="UReport_page" style="display: none;">
+            <div class="SJournal_Profile_Read_Frame">
+                <div class="SJournal_Profile_Read1">
+                    <input type="text" id="" disabled value="Total Paramedics: 0" class="Profile_Text_Input">
+                    <input type="text" id="" disabled value="Total Paramedics online: 0" class="Profile_Text_Input">
+                    <input type="text" id="" disabled value="Units Created this session: 0" class="Profile_Text_Input">
+                </div>
+                <div class="SJournal_Profile_Read">
+                </div>
+            </div>
+            <div class="SJournal_Profiles2" id="SJournal_Profiles">
+            </div>
+        </div>
+    </div>
+<!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+</body>
+</html>
