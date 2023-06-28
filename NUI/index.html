@@ -18,7 +18,7 @@
     <div class="Frame" id="Frame"> 
         <!-- Main Menu  -->
         <div class="SideMenu">
-            <img src="./logo.png" style="width: 100%; height: 18%; border-top-left-radius: 5ch;">
+            <img src="./logo.png" onclick="SetDuty()" class="logopng">
             <button onclick="CloseCad()" class="MenuButton">Close Cad</button>
             <button onclick="Home()" class="MenuButton" id="Home_Button">Home</button>
             <button onclick="SJournal()" class="MenuButton" id="SJournal_Button">Journals</button>
@@ -26,8 +26,13 @@
             <button onclick="UnitsReports()" class="MenuButton" id="UReport_Button">Units / Reports</button>
         </div>
 
-
-
+        <!-- Help Page Here it activates when home button is pressed -->
+        <div class="Home_Frame" id="Help_page">
+            <br>
+            <p id="logonname" class="HomeButtons">Error</p>
+            <br>
+            <button onclick="PanicButton()" class="HomeButtons" id="UReport_Button">Panic button</button>
+        </div>
 
 
 
@@ -58,7 +63,11 @@
                         <option value="">Rullgardin meny som henning ba om</option>
                         <option value="">Rullgardin meny som henning ba om</option>
                     </select>
-                    <button onclick="NewIncident()" class="Widgetbutton" style="margin-left: 4%;">Upload Incident</button>
+
+                    <div class="Incidents_Description"  inputmode="true"; contenteditable="true";>Write short description here</div>
+                    <br>
+                    <button onclick="NewIncident()" class="Widgetbutton" style="margin-left: 0%; width: 90%;">Upload Incident</button>
+                    <br>
 
                 </div>
             </div>
@@ -72,7 +81,7 @@
                     <input type="text" id="SJournal_Profile_Birth" disabled value="Birthdate" class="Profile_Text_Input">
                     <input type="text" id="SJournal_Profile_Gender" disabled value="Gender" class="Profile_Text_Input">
 
-                    <div style="display: flex; height: 50%; width: 100%">
+                    <div style="display: flex; height: 50%; width: 100%;">
                         <button onclick="CloseCad()" class="MenuButton_Profile" disabled style="width: 10%;">Save</button>
                         <button onclick="NewIncident()" class="MenuButton_Profile">Incident manager</button>
                     </div>
@@ -99,9 +108,11 @@
                 </div>
             </div>
             <div class="SJournal_Profiles2" id="SJournal_Profiles">
+                <h4 style="color: white; margin-left: 45%">Incidents</h4>
+                <div style="color: white; margin-left: 0%" id="ucademsp_incident_report"></div>
             </div>
         </div>
     </div>
-<!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------>
 </body>
 </html>

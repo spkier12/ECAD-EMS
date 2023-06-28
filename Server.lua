@@ -45,3 +45,13 @@ RegisterNetEvent('ucademsp:getcitizen', function(d)
         DGender = Gender
     })
 end)
+
+
+-- Handle all the incoming incidents from players
+RegisterNetEvent('hospital:server:ambulanceAlert')
+AddEventHandler("hospital:server:ambulanceAlert", function(data)
+    TriggerClientEvent('ucad_client_logg', -1, {
+        type = 'ucademsp_incident_report',
+        ddata = data
+    })
+end)

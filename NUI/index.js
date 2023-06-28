@@ -27,6 +27,7 @@ async function Profile_Load(src) {
 // Open next Search for journal page
 async function Home() {
     await HideUI("home", "Home_Button")
+    document.getElementById("Help_page").style.display = "flex"
 }
 async function SJournal() {
     await HideUI("SJournal_page", "SJournal_Button")
@@ -38,7 +39,7 @@ async function UnitsReports() {
 
 
 async function HideUI(UI_To_Show, UI_Buttons_Show) {
-    let UI = ["SJournal_page", "UReport_page"]
+    let UI = ["SJournal_page", "UReport_page", "Help_page"]
     let UI_Buttons = ["Home_Button", "SJournal_Button", "Home2_Button", "UReport_Button"]
     UI.forEach(element => {
         if (UI_To_Show == element) {

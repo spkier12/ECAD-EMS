@@ -21,6 +21,7 @@ files {
 	'./NUI/fivem.js',
 	'./NUI/index.css',
 	'./NUI/logo.png',
+	'./NUI/home_background.png',
 
 }
 
@@ -30,6 +31,8 @@ escrow_ignore {
 	'./NUI/index.css',
 	'./NUI/index.js',
 	'./NUI/fivem.js',
+	'./NUI/home_background.png',
+
 }
 
 lua54 'yes'
